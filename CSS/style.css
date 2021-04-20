@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Oswald:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Domine', serif;
+}
+
+:root {
+  --theme-color: #3b3b3b;
+  --white: #ffffff;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s;
+    padding: 20px 40px;
+    z-index: 1000;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--theme-color);
+    transition: 0.5s;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background-color: #fff;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: var(--theme-color);
+}
+
+header ul{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    position: relative;
+}
+header ul li a{
+    color: var(--theme-color);
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+}
+
+.signUp a{
+    background-color: var(--theme-color);
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 10px;
+}
+
+.signIn a{
+    color: var(--theme-color);
+    padding: 8px 25px;
+    border-radius: 10px;
+    border: 1px solid #3b3b3b;
+}
