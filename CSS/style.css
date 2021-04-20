@@ -10,11 +10,28 @@
 body{
     height: 100vh;
     font-family: 'Domine', serif;
+    background-color: #fafafa;
 }
 
 :root {
   --theme-color: #3b3b3b;
   --white: #ffffff;
+}
+
+.h-100{
+    height: 100%;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.pb-50{
+    padding-bottom: 50px;
 }
 
 header{
@@ -26,8 +43,9 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: .6s;
-    padding: 20px 40px;
+    padding: 10px 40px;
     z-index: 1000;
+    /* border-bottom: .5px solid #3b3b3b3f; */
 }
 
 header .logo{
@@ -40,13 +58,13 @@ header .logo{
 }
 
 header.sticky{
-    padding: 5px 100px;
-    background-color: #fff;
+    /* padding: 10px 60px; */
+    background-color: #b9b9b9;
 }
 
 header.sticky .logo,
 header.sticky ul li a{
-    color: var(--theme-color);
+    /* color: var(--theme-color); */
 }
 
 header ul{
@@ -54,6 +72,7 @@ header ul{
     position: relative;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 header ul li{
     list-style: none;
@@ -78,7 +97,127 @@ header ul li a{
 
 .signIn a{
     color: var(--theme-color);
-    padding: 8px 25px;
+    padding: 6px 25px;
     border-radius: 10px;
     border: 1px solid #3b3b3b;
+}
+
+/* Header End */
+.p-100{
+    padding: 100px 0;
+}
+
+.banner-area{
+    position: relative;
+}
+
+.banner-img img{
+    width: 60%;
+    background-size: cover;
+
+}
+
+.banner-content h2{
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--theme-color);
+}
+
+.banner-area p{
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.banner-content .inp-email{
+    border: 1px solid var(--theme-color);
+    padding: 10px 20px;
+    color: #fff;
+    outline: none;
+    border-radius: 10px 0px 0px 10px;
+    position: relative;
+}
+.banner-content .startBtn{
+    background-color: var(--theme-color);
+    padding: 11px 30px;
+    position: absolute;
+    outline: none;
+    border: none;
+    color: var(--white);
+    border-radius: 0 10px 10px 0;
+}
+/* Banner End */
+
+.single-card {
+    text-align: center;
+}
+
+.single-card img{
+    width: 6rem;
+}
+
+.single-card h4{
+    font-size: 25px;
+}
+
+.single-card p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+/* Course card End Here */
+.homework-left{
+    padding: 60px 0;
+}
+
+.homework-left h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.homework-left p{
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+.theme-button{
+    background-color: var(--theme-color);
+    color: var(--white);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.theme-button:hover{
+    background-color: #1b1b1b;
+    color: var(--white);
+}
+
+.homework-right img{
+    width: 60%;
+    background-size: cover;
+    margin: 0 0 0 10rem;
+}
+/* Homework Area End Here */
+
+.left-tutor img{
+    width: 60%;
+    background-size: cover;
+}
+
+.right-tutor{
+      padding: 60px 0;
+}
+
+.right-tutor h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.right-tutor p{
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    padding: 20px 0;
 }
