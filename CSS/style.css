@@ -221,3 +221,65 @@ header ul li a{
     font-weight: 300;
     padding: 20px 0;
 }
+
+/* Question Area Start Here */
+.question-left{
+    padding-top: 5rem;
+}
+
+.question-left .according{
+    /* background-color: #eee; */
+    background: none;
+    color: var(--theme-color);
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #1b1b1b33;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.question-left .according.active,
+.question-left .according:hover{
+    background-color: #ddd;
+}
+
+.question-left .according::after{
+    content: '\02795';
+    font-size: 16px;
+    color: var(--theme-color);
+    float: right;
+    margin-left: 5px;
+}
+
+.question-left .according.active:after{
+    content: '\02796';
+}
+
+.panel{
+    padding: 0 20px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    max-height: 0;
+    color: #4d4d4d;
+}
+
+.panel p{
+    font-size: 16px;
+}
+
+.panel.show{
+    opacity: 1;
+    max-height: 500px;
+}
+
+.question-right img{
+    width: 60%;
+    background-size: cover;
+    margin: 0 0 0 5rem;
+}
