@@ -1,55 +1,70 @@
 @media only screen and (max-width: 767px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    background-color: #b9b9b9;
+  .banner-area {
+    margin-top: 0px;
   }
 
-  header ul{
-      flex-direction: column;
-      text-align: center;
+  .section-title {
+    font-size: 35px !important;
+    text-align: center;
   }
 
-  header>.logo{
-      text-align: center;
-      margin-left: 30px;
-  }
-
-  header ul li{
-      margin: 5px 0;
-  }
-  .signUp a,.signIn a{
-      padding: 5px 10px;
-      font-size: 12px;
-      text-align: center;
-      display: flex;
-  } 
-  
-  .banner-area{
-      margin-top: 220px;
-  }
-
-  .banner-content h2{
-      font-size: 40px  !important;
-      text-align: center;
-  }
-
-  .banner-content p{
-      text-align: center;
+  .section-paragraph {
+    text-align: center;
+    font-size: 12px;
+    padding: 0 30px;
   }
 
   .banner-content .inp-email {
-  padding: 5px 10px !important;
-  width: 80%;
+    padding: 5px 10px !important;
+    width: 80%;
+  }
+
+  .banner-content .startBtn {
+    padding: 6px 10px !important;
+  }
+
+  .banner-img img {
+    width: 100%;
+    margin-left: 20%;
+  }
+
+  .center-button {
+    margin: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center-button {
+    padding: 5px;
+  }
+
+  .homework-right img {
+    
+  }
+
+  .subscription-card {
+    width: 400px;
+    margin: 10px 0;
 }
 
-.banner-content .startBtn {
-  padding: 6px 10px  !important;
-}
+  .tagline {
+    text-align: center;
+  }
 
-.banner-img img {
-  width: 100%;
-  margin-left: 20%;
-}
-
+  .footer-area .ft-list ul:nth-child(even){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .footer-area .ft-list{
+     text-align: center;
+     margin: 20px 0;
+     background-color: #1f1f1f4b;
+     padding: 10px;
+     border-radius: 5px;
+  }
+  .footer-area ul li a{
+    margin: 0 10px;
+  }
 }

@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="FontAwesome-Files/all.min.css" />
     <link rel="stylesheet" href="CSS/responsive.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <div class="Nav">
+    <!-- <div class="Nav">
       <header>
         <a href="#" class="logo">Tutor</a>
         <ul>
@@ -25,12 +26,39 @@
             <li class="signUp"><a href="#">Create Free account</a></li>
             <li class="signIn"><a href="#">Sign in</a></li>
 
-            <!-- <a href="#" class="signUp">Create Free account</a>
-            <a href="#" class="signIn">Sign in</a> -->
+           <a href="#" class="signUp">Create Free account</a>
+            <a href="#" class="signIn">Sign in</a> 
           
         </ul>
       </header>
-    </div>
+    </div> -->
+
+    <header id="header">
+      <a href="#" class="logo">Tutor</a>
+      <ul>
+        <li><a href="#" onclick="toggle()" class="active">Features</a></li>
+        <li><a href="#" onclick="toggle()">Blog</a></li>
+        <li><a href="#" onclick="toggle()">Pricing</a></li>
+        <li><a href="#" onclick="toggle()">FAQ</a></li>
+
+        <li class="signUp"><a href="#">Create Free account</a></li>
+        <li class="signIn" id="signIn" onclick="signInClick()"><a href="#">Sign in</a></li>
+      </ul>
+      <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <section>
+      <div class="modal-login" id="closeDiv">
+        <p id="close" onclick="closed()" style="float: right; padding: 10px;">x</p>
+        <h2 class="text-center">Login</h2>
+        <form action="">
+          <input type="text" class="form-control" placeholder="Enter Email">
+          <input type="text" class="form-control" placeholder="Enter Password">
+          <button class="btn btn-secondary">Submit</button>
+        </form>
+      </div>
+    </section>
+
     <!-- Header Part End Here -->
 
     <!-- Banner Area Start Here -->
@@ -39,15 +67,18 @@
         <div class="row">
           <div class="col-md-6">
             <div class="banner-content">
-              <p style="text-transform: uppercase; font-size: 16px">
+              <p
+                style="text-transform: uppercase; font-size: 16px"
+                class="tagline"
+              >
                 Learn and achieve
               </p>
-              <h2>
+              <h2 class="section-title">
                 Find the right <br />
                 online tutor <br />
                 for you
               </h2>
-              <p>
+              <p class="section-paragraph">
                 With Textbook Solution, Expert Q&A, Video <br />
                 Explanations and practice Problems.
               </p>
@@ -118,17 +149,19 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 homework-left">
-            <h2>
+            <h2 class="section-title">
               Get instant help with <br />
               your homework
             </h2>
-            <p>
+            <p class="section-paragraph">
               Our online tutors are always available. We've Selected the best
               Tutors from thousand of qualified educators. We find the best
               tutors, so you can get help when you need it!
             </p>
 
-            <a href="#" class="theme-button">Enter your question</a>
+            <a href="#" class="theme-button center-button"
+              >Enter your question</a
+            >
           </div>
           <div class="col-md-6 homework-right">
             <img src="Images/app2.png" alt="" />
@@ -146,13 +179,13 @@
             <img src="Images/app1.png" alt="" />
           </div>
           <div class="col-md-6 right-tutor">
-            <h2>About Our Tutors</h2>
-            <p>
+            <h2 class="section-title">About Our Tutors</h2>
+            <p class="section-paragraph">
               All our tutors are trusted. They are checked for credibility
               before they can join our platform and all hold the degrees and
               certificates stated in their profiles.
             </p>
-            <a href="#" class="theme-button">Find a tutor</a>
+            <a href="#" class="theme-button center-button">Find a tutor</a>
           </div>
         </div>
       </div>
@@ -256,13 +289,13 @@
     <section class="footer-area pt-100">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 ft-list">
             <h2>Tutor</h2>
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 ft-list">
             <h3>Links</h3>
             <ul>
               <li><a href="#">Chemistry</a></li>
@@ -271,7 +304,7 @@
               <li><a href="#">Painting</a></li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 ft-list">
             <h3>Knowledge</h3>
             <ul>
               <li><a href="#">Careers</a></li>
@@ -280,7 +313,7 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 ft-list">
             <h3>Company</h3>
             <ul>
               <li><a href="#">About</a></li>
@@ -289,6 +322,10 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <div class="scroll">
+        <p><i class="fab fa-down-arrow"></i></p>
       </div>
     </section>
 
@@ -308,7 +345,12 @@
           this.nextElementSibling.classList.toggle("show");
         };
       }
+      function toggle() {
+        var header = document.getElementById("header");
+        header.classList.toggle("active");
+      }
     </script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="JavaScript/app.js"></script>
   </body>
 </html>
